@@ -1,0 +1,108 @@
+.card {
+  background-color: #BB8588;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;          /* ocupa todo espaço disponível */
+  max-width: 400px;     /* limite no desktop */
+  min-width: 260px;     /* não deixa ficar minúsculo demais */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: #FDF1F1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.imageContainer {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 250px;        /* reduz um pouco */
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.productName {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.productDescription {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.productBuy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .productImage {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 320px;   /* encolhe no celular */
+    padding: 15px;
+  }
+
+  .productImage {
+    height: 200px;
+  }
+
+  .productName {
+    font-size: 1.1rem;
+  }
+
+  .productDescription {
+    font-size: 0.95rem;
+  }
+
+  .productPrice {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 250px;   /* bem compacto */
+    min-width: 200px;
+    padding: 12px;
+  }
+
+  .productImage {
+    height: 180px;
+  }
+
+  .productName {
+    font-size: 1rem;
+  }
+
+  .productDescription {
+    font-size: 0.9rem;
+  }
+
+  .productPrice {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,20 @@
+/* Botão só de ícone */
+.iconButton {
+  background: transparent;
+  border: 2px solid rgba(253, 241, 241, 0.2);
+  border-radius: 20px;
+  padding: 8px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fdf1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.iconButton:hover {
+  background: rgba(253, 241, 241, 0.1);
+}

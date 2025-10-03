@@ -1,0 +1,115 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Lado esquerdo - logo */
+.left {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImage {
+  max-width: 800px;   /* tamanho máximo no desktop */
+  width: 100%;        /* ocupa até 100% do container */
+  height: auto;
+  object-fit: contain;
+
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Lado direito - conteúdo e card */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+  color: #3F3D56;
+  text-align: center;
+}
+
+/* Carrossel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3F3D56;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: #D7CE93;
+}
+
+/* Responsivo */
+@media (max-width: 1248px) {
+  .mainContainer {
+    flex-direction: column; /* logo em cima, produtos embaixo */
+    align-items: center;
+    gap: 20px;
+  }
+
+  .right {
+    gap: 30px;
+  }
+
+  .logoImage {
+    max-width: 600px; /* reduz no tablet maior */
+  }
+}
+
+@media (max-width: 1024px) {
+  .logoImage {
+    max-width: 450px; /* reduz no tablet médio */
+  }
+}
+
+@media (max-width: 768px) {
+  .left {
+    flex: unset;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logoImage {
+    max-width: 300px; /* reduz bem no celular */
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoImage {
+    width: 220px; /* menor ainda em celulares pequenos */
+  }
+
+  .carousel {
+    gap: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

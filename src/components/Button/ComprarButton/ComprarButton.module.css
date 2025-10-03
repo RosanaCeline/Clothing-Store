@@ -1,0 +1,52 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: transparent;
+  border: 2px solid rgba(253, 241, 241, 0.2);
+  border-radius: 8px;
+  padding: 10px 16px;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fdf1f1;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: rgba(253, 241, 241, 0.1);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+/* Botão só de ícone */
+.iconButton {
+  background: transparent;
+  border: 2px solid rgba(253, 241, 241, 0.2);
+  border-radius: 8px;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #fdf1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.iconButton:hover {
+  background: rgba(253, 241, 241, 0.1);
+}
