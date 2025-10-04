@@ -1,6 +1,6 @@
 import styles from "./ProductCard.module.css";
 
-function ProductCard({ name, price, image, description, buttonComponent }) {
+function ProductCard({ name, price, image, description, buttonComponent, buttonSize = "small" }) {
   return (
     <article className={styles.card}>
       <div className={styles.imageContainer}>
@@ -8,12 +8,18 @@ function ProductCard({ name, price, image, description, buttonComponent }) {
       </div>
       <h3 className={styles.productName}>{name}</h3>
       <p className={styles.productDescription}>{description}</p>
-      <div className={styles.productBuy}>
+      
+      <div
+        className={`${styles.productBuy} ${
+          buttonSize === "large" ? styles.column : ""
+        }`}
+      >
         <p className={styles.productPrice}>Por R$ {price}</p>
         {buttonComponent}
       </div>
     </article>
   );
 }
+
 
 export default ProductCard;
