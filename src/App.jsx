@@ -25,7 +25,7 @@ function App() {
         ))}
       </Routes>
 
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={3000} style={{ top: "105px" }} />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,143 @@
+.mainContainer {
+  width: 100%;
+  align-self: start;
+  padding: 25px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: start;
+  margin: 0;
+  color: #3F3D56;
+  margin-bottom: 40px;
+}
+
+.cartWrapper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.cartListContainer {
+  flex: 2;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.cartListContainer h3,
+.cartSummary h3 {
+  margin: 0 0 25px 0;
+  font-size: 1.5rem;
+  color: #3f3d56;
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartItem {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cartItem img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cartItem div {
+  flex: 1;
+}
+
+.cartItem h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cartItem p {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.qtyControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qtyControls button {
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #3f3d56;
+  color: #FDF1F1;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qtyControls button:hover {
+  background-color: #D7CE93;
+  color: #8A9688;
+}
+
+.qtyControls span {
+  min-width: 25px;
+  text-align: center;
+}
+
+.cartSummary {
+  flex: 1;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.cartSummary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.finalizarBtn {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #3f3d56;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.finalizarBtn:hover {
+  background-color: #D7CE93;
+  color: #8A9688;
+}
+
+@media (max-width: 768px) {
+  .cartWrapper {
+    flex-direction: column;
+  }
+}

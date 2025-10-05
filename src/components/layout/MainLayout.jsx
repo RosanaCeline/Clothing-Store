@@ -1,14 +1,18 @@
 import { Outlet } from "react-router-dom";
+import { useState } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import styles from "./MainLayout.module.css";
 
 function MainLayout() {
+  const [cart, setCart] = useState([]);
+
   return (
     <>
-      <Header />
+      <Header cart={cart} />
       <main className={styles.main}>
-        <Outlet /> {/* Aqui entram as páginas */}
+        {/* Todas as páginas dentro do layout terão acesso ao cart */}
+        <Outlet context={{ cart, setCart }} />
       </main>
       <Footer />
     </>

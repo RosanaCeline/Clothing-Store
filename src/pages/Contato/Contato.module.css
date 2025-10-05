@@ -1,0 +1,97 @@
+.mainContainer {
+  width: 100%;
+  align-self: start;
+  padding: 25px 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: start;
+  margin: 0;
+  color: #3F3D56;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #5a5870;
+  margin: 0 0 30px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+}
+
+.formSection {
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #3F3D56;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 20px;
+}
+
+.formSection input {
+    max-width: none;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputGroup label {
+  font-size: 1.1rem;
+  color: #3F3D56;
+}
+
+.textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 150px;
+  resize: none;
+  font-family: inherit;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #bb8588;
+  box-shadow: 0 0 5px rgba(187, 133, 136, 0.5);
+}
+
+.textarea::placeholder {
+  color: #aaa;
+  font-family: inherit;
+}
+
+.imageSection {
+  flex: 1;
+  background-image: url("../../assets/images/contato.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .imageSection {
+    display: none;
+  }
+}

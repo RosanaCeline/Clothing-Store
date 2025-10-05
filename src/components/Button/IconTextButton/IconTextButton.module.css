@@ -12,14 +12,30 @@
 
   font-size: 1rem;
   font-weight: 500;
-  color: #fdf1f1;
   cursor: pointer;
 
   transition: all 0.3s ease;
+
+  font-family: inherit;
 }
 
-.button:hover {
+/* Tema claro */
+.light {
+  color: #fdf1f1;
+}
+
+.light:hover {
   background: rgba(253, 241, 241, 0.1);
+}
+
+/* Tema escuro */
+.dark {
+  border: 2px solid rgba(92, 89, 126, 0.2);
+  color: rgb(92, 89, 126);
+}
+.dark:hover {
+  background: rgba(43, 37, 110, 0.2);
+  border-color: rgba(92, 89, 126, 0.4);
 }
 
 .icon {
