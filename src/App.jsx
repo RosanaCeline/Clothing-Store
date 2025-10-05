@@ -1,13 +1,11 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import routes from "./routes/routes";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const basename = "/Clothing-Store/";
-
 function App() {
   return (
-    <BrowserRouter basename={basename}>
+    <HashRouter>
       <Routes>
         {routes.map(({ path, element, children }) => (
           <Route key={path} path={path} element={element}>
@@ -23,12 +21,8 @@ function App() {
         ))}
       </Routes>
 
-      <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        style={{ top: "105px" }}
-      />
-    </BrowserRouter>
+      <ToastContainer position="top-right" autoClose={3000} style={{ top: "105px" }} />
+    </HashRouter>
   );
 }
 
