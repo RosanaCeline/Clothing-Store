@@ -1,16 +1,74 @@
-# React + Vite
+# Mini Loja Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Visite a aplicação online](https://clothing-store-delta-rust.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛒 Descrição do Projeto
 
-## React Compiler
+Este é um projeto de **validação de Tecnologia Web**, uma mini loja fictícia (ex: roupas) feita em React. O usuário pode:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- visualizar produtos  
+- buscá-los  
+- adicioná-los ao carrinho  
+- alterar quantidade  
+- finalizar “compra” via formulário  
+- entrar em contato via formulário simples  
 
-## Expanding the ESLint configuration
+É uma aplicação front-end, simulando o fluxo de uma loja.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙ Funcionalidades
+
+### 1. Página Inicial  
+- Logotipo / banner  
+- Menu de navegação (Home, Produtos, Carrinho, Contato)  
+- Destaques de produtos  
+
+### 2. Catálogo de Produtos  
+- Exibição de cards com imagem, nome, descrição, preço e botão  
+- Busca por nome com filtro em tempo real  
+
+### 3. Carrinho de Compras  
+- Lista de itens adicionados  
+- Controle de quantidade (`+` / `-`)  
+- Se quantidade = 1, botão de diminuir vira ícone de lixeira  
+- Cálculo automático do total  
+- Botão “Finalizar Compra”  
+
+### 4. Página de Finalização  
+- Formulário com campos: Nome, E-mail, Endereço, Forma de Pagamento  
+- Validações: obrigatórios, email válido, nome sem números  
+- Mensagem de sucesso ao confirmar  
+- Limpeza do carrinho após confirmar  
+
+### 5. Página de Contato  
+- Campo “Assunto”  
+- Campo “Descrição” 
+- Subtítulo explicativo  
+- Imagem decorativa ao lado  
+
+### 6. Página 404  
+- Mensagem amigável de “página não encontrada”  
+- Imagem ilustrativa  
+- Botão para voltar para o menu  
+
+---
+
+## 📦 Tecnologias & Ferramentas
+
+- React  
+- Vite  
+- Vercel (deploy)  
+- Git / GitHub  
+
+---
+
+## 🧑‍💻 Como executar localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repo.git
+cd nome-do-repo
