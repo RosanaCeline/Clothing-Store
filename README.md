@@ -70,5 +70,5 @@ Este é um projeto de **validação de Tecnologia Web**, uma mini loja fictícia
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+git clone https://github.com/RosanaCeline/Clothing-Store
+cd Clothing-Store
